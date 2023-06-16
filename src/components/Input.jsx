@@ -8,10 +8,10 @@ const Input = () => {
 
 	const handleDebounceResult = debounce((e) => {
 		setDebounceResult(e.target.value);
-	}, 500);
+	}, 1000);
 
 	return (
-		<div className='counter-group'>
+		<div className='input-group'>
 			<div>
 				<h3>Normal Input</h3>
 				<input
