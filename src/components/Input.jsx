@@ -1,5 +1,5 @@
 import React from 'react';
-import debounce from '../utils/debounce';
+import debounce from '../utils/debounce_lodash';
 
 const Input = () => {
 	const [normalInput, setNormalInput] = React.useState('');
@@ -22,7 +22,7 @@ const Input = () => {
 				<p>{normalInput ? normalInput : '......'}</p>
 			</div>
 			<div>
-				<h3>Debounce Input (500ms)</h3>
+				<h3>Debounce Input (1000ms)</h3>
 				<input
 					type='text'
 					value={debounceInput}
